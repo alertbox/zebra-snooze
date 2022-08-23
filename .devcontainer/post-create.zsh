@@ -19,5 +19,5 @@ if (($+commands[jekyll])); then
   echo Jekyll exists. &> /dev/null;
 else
   echo Jekyll does not exist.
-  gem install jekyll github-pages &> /dev/null;
+  gem install jekyll -v 3.9.2 github-pages -v 227 &> /dev/null;
 fi
