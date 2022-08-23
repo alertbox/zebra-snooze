@@ -15,7 +15,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
 		// Jekyll server
-		4000,
+		8004,
 		// Live reload server
 		35729
 	],
