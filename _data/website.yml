@@ -2,9 +2,9 @@ title: zebra snooze
 tagline: >-
   This is the sixth zebra snoozing thoroughly.
 description: >- # tagline can be a bit lengthy sometimes
-  <a href="https://kosalanuwan.github.io"><span>@</span>kosalanuwan</a>'s sixth zebra snoozing thoroughly for a Jekyll remote theme.
+  <a href="https://github.com/alertbox"><span>@</span>alertbox</a>'s sixth zebra snoozing thoroughly for a Jekyll remote theme.
 
-bugs: https://github.com/kosalanuwan/ama/#readme
+bugs: https://github.com/alertbox/ama/#readme
 date_format: "%b %-d, %Y"
 
 # Feature flags
@@ -13,12 +13,10 @@ show_social_links: true
 
 # Site author
 author: 
-  name: Kosala Nuwan Perera
-  avatar: https://avatars1.githubusercontent.com/u/958227?s=460&u=9b166f138e17fd8a8a60177dbbaa79deff890ac6&v=4
-  email: kosala.nuwan@gmail.com
+  name: Alertbox Inc.
+  avatar: https://avatars.githubusercontent.com/u/4471443?v=4
+  email: alertbox.incgmail.com
   # Social
-  public_site: https://kosalanuwan.github.io
-  github: kosalanuwan
-  twitter: kosalanuwan
-  linkedin: kosalanuwan
-  blog: kosalanuwan
+  public_site: https://alertbox.github.io/zebra-snooze/
+  github: alertbox
+  twitter: alertboxinc
