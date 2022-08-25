@@ -4,7 +4,7 @@
 
 >  This is the sixth zebra snoozing thoroughly!
 
-In case you were wondering, [Zebra Snooze][demo-stie] is a [Jekyll][jekyll] remote theme and a [template repo with the prerequisites][tryout-pages] to build and host static sites with [GitHub Pages][github-pages]. Include extensions and related dependencies for use with [devcontainers][devcontainers] so you don't have to deal with setting up locally.
+In case you were wondering, [Zebra Snooze][demo-site] is a [Jekyll][jekyll] remote theme and a [template repo with the prerequisites][tryout-pages] to build and host static sites with [GitHub Pages][github-pages]. Include extensions and related dependencies for use with [devcontainers][devcontainers] so you don't have to deal with setting up locally.
 
 [demo-site]: https://alertbox.github.io/zebra-snooze/
 [jekyll]: https://jekyllrb.com/tutorials/video-walkthroughs/
