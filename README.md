@@ -43,7 +43,7 @@ That's it. You now have a *cunning stunning stunt kite*, and is ready to start w
 >
 >  Whilst *zebra snooze* should work unmodified, you can customize it's [features used][jekyll-features] by updating the `_config.yml` and the `devcontainer.json`.
 
-[jekyll-features]: https://github.com/microsoft/vscode-dev-containers/tree/main/script-library/docs
+[jekyll-features]: https://jekyllrb.com/docs/configuration/
 
 ## Stu Chews Shoes
 
