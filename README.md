@@ -1,7 +1,5 @@
 # Zebra Snooze
 
-[<img align="right" alt="GitHub Pages" width="128rem" src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" />][github-pages]
-
 >  This is the sixth zebra snoozing thoroughly!
 
 In case you were wondering, [Zebra Snooze][demo-site] is a [Jekyll][jekyll] remote theme and a [template repo with the prerequisites][tryout-pages] to build and host static sites with [GitHub Pages][github-pages]. Include extensions and related dependencies for use with [devcontainers][devcontainers] so you don't have to deal with setting up locally.
