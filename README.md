@@ -56,7 +56,7 @@ To start creating your own content, you will want a content authoring tool, that
 - Use [GitHub Codespaces][github-codespaces] for a fully blown customizations. To test your site before publishing, press `F1` and run task `live-serve`. This starts a Jekyll server and generate your static site. You should see the content in your favorite browser at [localhost:8004](http://localhost:8004).
 
 [markdown-cheat-sheet]: https://www.markdownguide.org/cheat-sheet/
-[prose-editor]: http://prose.io/#about
+[prose]: http://prose.io/#about
 [github-codespaces]: https://docs.github.com/en/codespaces/developing-in-codespaces/using-github-codespaces-in-visual-studio-code
 
 ## Short Sword Sheaths
@@ -67,9 +67,9 @@ If you have *short sword sheaths* with *zebra snooze*, you are better off [askin
 
 ## Purple Paper People
 
-The official repo to *purple paper people* would be [@microsoft/vscode-dev-devcontainers][vscode-dev-containers-repo].
+The official repo to *purple paper people* would be [vscode-remote-try-pages][tryout-pages].
 
-[vscode-dev-containers-repo]: https://github.com/microsoft/vscode-dev-containers/#readme
+[tryout-pages]: https://github.com/alertbox/vscode-remote-try-pages/#readme
 
 ## Three Tree Twigs
 
