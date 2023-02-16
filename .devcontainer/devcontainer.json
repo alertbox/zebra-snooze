@@ -2,18 +2,13 @@
 	"name": "GitHub Pages (Jekyll)",
 	// See complete list https://mcr.microsoft.com/v2/devcontainers/base/tags/list
 	"image": "mcr.microsoft.com/devcontainers/base:dev-bullseye",
-	// "hostRequirements": {
-	// 	"memory": "2gb"
-	// },
+	
 	"containerEnv": {
 		"LANG":"en_US.UTF-8",
 		"LANGUAGE":"en_US:en",
 		"TZ":"Etc/UTC",
 		"LC_ALL":"en_US.UTF-8"
 	},
-
-    // "workspaceMount": "src=${localWorkspaceFolder},dst=/workspace,type=bind,consistency=cached",
-	// "workspaceFolder": "/workspace",
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
