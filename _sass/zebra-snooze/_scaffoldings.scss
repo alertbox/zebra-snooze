@@ -22,6 +22,8 @@ body {
     color: var(--paragraph);
     background-color: var(--background);
     font-weight: var(--paragraph-text-weight);
+    text-rendering: optimizeSpeed;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 p {
