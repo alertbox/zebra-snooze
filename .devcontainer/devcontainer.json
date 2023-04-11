@@ -1,7 +1,9 @@
 {
-	"name": "GitHub Pages (Jekyll)",
-	// See complete list https://mcr.microsoft.com/v2/devcontainers/base/tags/list
-	"image": "mcr.microsoft.com/devcontainers/base:dev-bullseye",
+	"name": "zebra-snooze",
+
+	// See complete list https://hub.docker.com/_/ruby/tags
+	// GitHub Pages dependencies https://pages.github.com/versions/
+	"image": "ruby:2.7.4-bullseye",
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
@@ -10,24 +12,26 @@
 		// Live reload server
 		35729
 	],
-	
+
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	"remoteUser": "root",
 	
+    // "workspaceMount": "src=${localWorkspaceFolder},dst=/workspace,type=bind,consistency=cached",
+	// "workspaceFolder": "/workspace",
+	
 	// Add more features. See complete list https://github.com/devcontainers/features
 	"features": {
-		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
-			"moby": false,
-			"dockerDashComposeVersion": "v2" 
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"configureZshAsDefaultShell": true
 		},
 		"ghcr.io/devcontainers/features/github-cli:1": {},
-		"ghcr.io/devcontainers/features/node:1": {},
-		// GitHub Pages dependencies https://pages.github.com/versions/
-		"ghcr.io/devcontainers/features/ruby:1": { 
-			"version": "2.7.4" 
-		}
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+			"moby": false,
+			"dockerDashComposeVersion": "v2"
+		},
+		"ghcr.io/devcontainers/features/ruby:1": "none",
+		"ghcr.io/devcontainers/features/node:1": {}
 	},
-	
 	"containerEnv": {
 		"LANG":"en_US.UTF-8",
 		"LANGUAGE":"en_US:en",
@@ -41,29 +45,48 @@
 		"vscode": {
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"ms-vscode.wordcount",
+				"rebornix.Ruby",
+				"redhat.vscode-yaml",
+
+				"usernamehw.errorlens",
 				"editorconfig.editorconfig",
 				"esbenp.prettier-vscode",
+
+				"bierner.github-markdown-preview",
 				"streetsidesoftware.code-spell-checker",
 				"znck.grammarly",
 				"redhat.fabric8-analytics",
-				"redhat.vscode-yaml",
-				"bierner.github-markdown-preview",
-				"rebornix.Ruby"
+				"ms-vscode.wordcount"
 			],
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
 				"terminal.integrated.defaultProfile.linux": "zsh",
+
 				"editor.formatOnPaste": true,
 				"editor.guides.bracketPairs": "active",
 				"debug.internalConsoleOptions": "neverOpen",
+
+				"scm.defaultViewMode": "tree",
+
 				"files.watcherExclude": {
 					"**/_site/**": true
 				}
 			}
 		}
 	},
-
+	
+	// Use 'updateContentCommand' to run commands after the container is successfully created.
+	"updateContentCommand": { 
+		// Remove imagemagick due to https://security-tracker.debian.org/tracker/CVE-2019-10131
+		"clean": "apt-get purge -y imagemagick imagemagick-6-common",
+		// If there's a Gemfile.lock, then install the version of Bundler from Gemfile.lock.
+		// "install": "gem update --system && cat Gemfile.lock | tail -n 2 | grep -C2 'BUNDLED WITH' | tail -n 1 | xargs gem install bundler -v"
+		"install": "gem update --system && gem install bundler"
+	},
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "zsh .devcontainer/post-create.zsh"
+	// If there's a Gemfile, then restore
+	// It's assumed that the Gemfile will install Jekyll and GitHub Pages too
+	"postCreateCommand": {
+		"restore": "bundle install"
+	}
 }
