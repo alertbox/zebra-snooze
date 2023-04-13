@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "zebra-snooze"
-  spec.version       = "0.1.1"
-  spec.authors       = ["Alertbox Inc."]
+  spec.version       = "1.0.0"
+  spec.authors       = ["Alertbox Inc.", "Kosala Nuwan Perera"]
   spec.email         = ["alertbox.inc@gmail.com"]
 
   spec.summary       = "This is the sixth zebra snoozing thoroughly."
@@ -16,10 +16,5 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '2.7.4'
   # spec.add_runtime_dependency 'jekyll', '3.9.3'
-  spec.add_dependency 'github-pages', '228'
-  spec.add_dependency 'jekyll-feed'
-  spec.add_dependency 'json'
-  spec.add_dependency 'jemoji'
-  spec.add_dependency 'jekyll-sitemap'
-  spec.add_dependency 'jekyll-redirect-from'
+  spec.add_runtime_dependency 'github-pages', '228'
 end
